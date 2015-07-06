@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amitabh Bachchan</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/superhero-bootstrap.min.css">
+    <style>
+        body{
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+<div id="page" class="container">
+    <header class="container">
+        <div id="menu" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="btn btn-primary btn-sm navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                <div id="logo">
+                    <a href='.'><h4>Amitabh Bachchan</h4></a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav"><a href="Index.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="body">
+        <div class="page-header">
+            <ol class="breadcrumb">
+                <li class="active"><a href="Index.html">Home</a> </li>
+                <li class="active">Contact</li>
+            </ol>
+
+            <h1>Contact Us</h1>
+        </div>
+        <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
+        <ul class="nav nav-tabs">
+            <li> <a href="#formTab" data-toggle="tab">Contact Form</a> </li>
+            <li><a href="#addressTab" data-toggle="tab">Address</a> </li>
+        </ul>
+    </section>
+    <div class="tab-content">
+
+        <div class="well tab-pane active" id="formTab">
+
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nameInput">Your Name</label>
+                    <input type="text" id="nameInput" name="nameInput" class="form-control" placeholder="name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon-envelope"></span>
+                        <input type="email" id="email" class="form-control" placeholder="a@b.com"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Favorite Character</label>
+                    <div class="btn-group">
+                        <button class="btn btn-success active">Vijay Dinanath Chauhan</button>
+                        <button class="btn btn-success">Don</button>
+                        <button class="btn btn-success">Babu Moshai</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Favorite Movie</label>
+                    <div class="btn-group " data-toggle="buttons">
+                        <label class="btn btn-success active"><input type="radio"> Don</label>
+                        <label class="btn btn-success"><input type="radio">Agneepath</label>
+                        <label class="btn btn-success"><input type="radio">Black</label>
+                        <div class="btn-group">
+                            <button class="btn btn-success">Other</button>
+                            <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" tabindex="-1">Sholey</a> </li>
+                                <li><a href="#" tabindex="-1">Amar Akbar Anthony</a> </li>
+                                <li class="divider"></li>
+                                <li class="disabled"><a href="#" tabindex="-1">Paa</a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <label>Reason</label>
+                    <button class="btn btn-success" id="pickButton">Pick One ...</button>
+                    <button class="btn btn-success" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="reasonDropdown">
+                        <li><a href="#" tabindex="-1">Adoration</a> </li>
+                        <li><a href="#" tabindex="-1">Ordering a White Russian</a>
+                        </li>
+                        <li><a href="#" tabindex="-1">Complaint</a>
+                        </li>
+                        <li><a href="#" tabindex="-1">I am lost</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--
+                                <div class="form-group">
+                                    <label for="reason">Reason</label>
+                                    <select id="reason" class="form-control">
+                                        <option>Adoration</option>
+                                        <option>Ordering a White Russian</option>
+                                        <option>Complaint</option>
+                                        <option>I am lost</option>
+                                    </select>
+                                </div>
+                -->
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea cols="40" rows="6" class="form-control" placeholder="message"></textarea>
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-success" data-toggle="tooltip" title="Press Here" data-placement="left"/>
+
+            </form>
+            <!-- <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog</a>-->
+        </div>
+        <div class="well tab-pane" id="addressTab">
+            <h3>Our fake address</h3>
+            <div>
+                <address>
+                    Amitabh Bachchan Fan Page<br />
+                    123 Main Street<br />
+                    Rug Ties The Room Together, MH 411037<br />
+                    <abbr title="Phone">P:</abbr>
+                    425.555.0100
+                </address>
+                <address>
+                    <strong>Support:</strong>   <a href="mailto:Support@fakelebowskifansite.com">Support@fakeabfansite.com</a><br />
+                    <strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakeabfansite.com</a>
+                </address>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<section class="container">
+    <hr />
+    <footer>
+        <p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
+    </footer>
+</section>
+<div class="modal fade" id="sentDialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h4>Thanks for clicking!</h4>
+            </div>
+            <div class="modal-body">
+                <p>This form doesn't really work.... haha</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" data-dismiss="modal" >Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-2.0.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        var $pickButton = $("#pickButton");
+        $("#reasonDropdown li a").on("click", function () {
+            var reason = $(this).text();
+            $pickButton.text(reason);
+
+        });
+    })();
+
+    var $sentDialog = $('#sentDialog');
+    $('#contactForm').on('submit', function () {
+        $sentDialog.modal('show');
+        return false;
+    });
+
+    $sentDialog.on('hidden.bs.modal', function () {
+        alert("Close");
+    });
+
+    $('#contactForm input[type="submit"]').tooltip(
+            /*{
+                placement:'right'
+            }*/
+    );
+</script>
+
+</body>
+</html>
